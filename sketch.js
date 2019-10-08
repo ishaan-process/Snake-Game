@@ -43,6 +43,11 @@ function draw(){
 	snake.update();
 	snake.show();
 
+	if(snake.end()){
+		print("Sucker");
+		background(255,0,0);
+		noLoop();
+	}
 
 	noStroke();
 	fill(255,0,0);
